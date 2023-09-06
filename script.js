@@ -16,7 +16,7 @@ searchbtn.addEventListener("click", (e) => {
 const getWeather = async (city) => {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1e3cf4d8c7ebbf000b3f26b159420a07`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1fbe49fc64c27ea81e714b8cc17a3525`
     );
 
     const wdata = await response.json();
@@ -60,7 +60,7 @@ window.addEventListener("load", () => {
       lat = pos.coords.latitude;
 
       const apiKey = "YOUR_OPENWEATHERMAP_API_KEY"; // Replace with your API key
-      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=1e3cf4d8c7ebbf000b3f26b159420a07`;
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=1fbe49fc64c27ea81e714b8cc17a3525`;
 
       try {
         const response = await fetch(api);
